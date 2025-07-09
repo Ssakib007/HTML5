@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">          
+    <title>Flex box</title>
+    <link rel="shortcut icon" href="media/icon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="Styles/blog.css">
+    <style>
+        .container div{
+            border: 2px solid black;
+            padding: 2px 3px;
+            margin: 5px;
+            height: 50px;
+            width: 100px;
+            font-size: 2em;
+
+        }
+        .container{
+            display: flex;
+        }
+        .box{
+           font-size: 2em;
+           height: 50px;
+           width: 80px;
+           border: 2px solid black ;
+        }
+        .box-container{
+            display: flex;
+            gap: 50px;
+        }
+        .user{
+            border: 2px solid black ;
+            height: 50px;
+            width: 80px;
+            background-color: bisque;
+            font-size: 2em;
+        }
+        .user-container{
+            display: flex;
+            /* justify-content: center; */
+            justify-content: space-around;
+        }
+        .card-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+           
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="center flex.html" target="_blank">Center flex</a></li>
+                <li><a href="flex.html" target="_blank">Flex box</a></li>
+                <li><a href="table.html" target="_blank">Table</a></li>
+                <li><a href="form.html" target="_blank">Cat types</a></li>
+                <li><a href="index.html" target="_blank">New tags</a></li>
+                <li><a href="blogs.html" target="_blank">My Blogs</a></li>
+                <li><a href="auto.html" target="_blank">Automatic</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <!-- .box-container -->
+    <div class="box-container">
+     <!-- .box{$}*6 -->
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    </div>
+
+    <div class="user-container">
+        <!-- .user{user$}*3 -->
+        <div class="user">user1</div>
+        <div class="user">user2</div>
+        <div class="user">user3</div>
+    </div>
+
+    <div class="card-container">
+        <div class="user">user1</div>
+        <div class="user">user2</div>
+        <div class="user">user3</div>
+        <div class="user">user4</div>
+        <div class="user">user5</div>
+        <div class="user">user6</div>
+        <div class="user">user7</div>
+        <div class="user">user8</div>
+        <div class="user">user9</div>
+        <div class="user">user10</div>
+        <div class="user">user11</div>
+        <div class="user">user12</div>
+        <div class="user">user1</div>
+        <div class="user">user2</div>
+        <div class="user">user3</div>
+        <div class="user">user4</div>
+        <div class="user">user5</div>
+        <div class="user">user6</div>
+        <div class="user">user7</div>
+        <div class="user">user8</div>
+        <div class="user">user9</div>
+        <div class="user">user10</div>
+        <div class="user">user11</div>
+        <div class="user">user12</div>
+    </div>
+</body>
+</html>
